@@ -1,0 +1,14 @@
+<header class="topnav">
+  <nav>
+    {% assign url = resource.relative_url | split: "/" %}
+    {% assign pageurl = url[1] | prepend: "/" %}
+    {% for item in nav %}
+    {% if item.url == pageurl %}
+      {% assign current = ' class="active"' %}
+    {% else %}
+      {% assign current = null %}
+    {% endif %}
+    <a{{ current }} href="{{item.url}}">{{item.title}}</a>
+    {% endfor %}
+  </nav>
+</header>

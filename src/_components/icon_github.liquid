@@ -1,0 +1,9 @@
+{% if reponame %}
+    <a href="https://github.com/{{ username }}/{{ reponame }}" target="_blank" rel="noopener">
+        <span class="username">{{ username }}/{{ reponame }}</span>
+    </a>
+{% else %}
+    <a href="https://github.com/{{ username }}" target="_blank" rel="noopener">
+        <span class="username">{{ username }}</span>
+    </a>
+{% endif %}

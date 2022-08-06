@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+<header>
+  <h1 class="pagetitle bold-title" itemprop="headline">{{ page.title | escape }}</h1>
+  {%- render "post_meta", page: page, site: site -%}
+</header>
+<section itemprop="articleBody">
+  {{ content }}
+</section>
+{% render "post_footer", page: page %}
+</article>
