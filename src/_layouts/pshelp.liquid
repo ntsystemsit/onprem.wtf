@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+<section class="border-bottom">
+  {%- render "post_meta", page: resource, site: site -%}
+</section>
+<section itemprop="articleBody">
+{{ content }}
+</section>
+{% render "post_footer", page: page %}
+</article>

@@ -30,8 +30,21 @@ template_engine: liquid
 # update `publicPath`.
 
 # timezone: America/Los_Angeles
-# pagination:
-#   enabled: true
+pagination:
+  enabled: true
+
+collections:
+  Scripts:
+    output: true
+    permalink: "/PowerShell/:title/"
+  Modules:
+    output: true
+    permalink: "/PowerShell/:title/"
+  OnlineHelp:
+    output: true
+    permalink: "/PowerShell/:title/"
+  tags:
+    output: true
 
 
 defaults:
@@ -46,17 +59,12 @@ defaults:
     scope:
       collection: "tags"
     values:
-      permalink: "/tags/:title"
       layout: "tags"
-  -
-    scope:
-      collection: "categories"
-    values:
-      permalink: "/categories/:title"
-      layout: "categories"
   -
     scope:
       collection: "posts"
     values:
       layout: "post"
       permalink: "/post/:title/"
+
+

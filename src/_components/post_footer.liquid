@@ -1,9 +1,9 @@
 <footer class="small-caps">
     {% if page.next %}
-        <a href="{{ page.next.url }}" class="float-right">next →</a>
+        <a href="{{ page.next.relative_url }}" class="float-right">next →</a>
     {% endif %}
     {% if page.previous %}
-        <a href="{{ page.previous.url }}" class="float-left">← previous</a>
+        <a href="{{ page.previous.relative_url }}" class="float-left">← previous</a>
     {% endif %}
 </footer>
 

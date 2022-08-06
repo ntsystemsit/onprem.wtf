@@ -1,9 +1,9 @@
-# Download & Source for {{ packagename }}
+# Download & Source for {{ data.title }}
 
-The {{ type }} is available on the <a href="https://www.powershellgallery.com/packages/{{ packagename }}" target="_blank" rel="noopener">PowerShell Gallery</a>, you can install or download it using the following commands:
+The {{ type }} is available on the <a href="https://www.powershellgallery.com/packages/{{ data.title }}" target="_blank" rel="noopener">PowerShell Gallery</a>, you can install or download it using the following commands:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Install-{{ type }} -Name {{ packagename }} -Scope CurrentUser</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Install-{{ data.type }} -Name {{ data.title }} -Scope CurrentUser</code></pre></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Save-{{ type }} -Name {{ packagename }} -Path &lt;Path&gt;</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Save-{{ data.type }} -Name {{ data.title }} -Path &lt;Path&gt;</code></pre></div>
 
-And you can find the source on GitHub: {% render "icon_github", username=:"tomtorggler", reponame:reponame %}
+And you can find the source on GitHub: {% render "icon_github", username: "tomtorggler", reponame: data.category %}

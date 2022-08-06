@@ -1,0 +1,11 @@
+# Functions
+
+<div class="post-list">
+    {%- for post in collections.OnlineHelp.resources -%}
+    {% assign downtitle = title | downcase %}
+    {% if post.category == downtitle %}
+        <h2 class="post-title"><a href="{{ post.relative_url }}">{{ post.data.title }}</a></h2>
+        {{ post.excerpt  }}
+    {%- endif -%}
+    {%- endfor -%}
+</div>

@@ -385,3 +385,15 @@ pre {
         display: inline-block;
     }
 }
+
+bridgetown-search-results {
+  --link-color: var(--accent-color);
+  --divider-color: var(--accent-color);
+  --text-color: var(--global-foreground);
+  max-width: 740px;
+}
+
+bridgetown-search-results::part(inner) {
+    background-color: var(--global-background);
+    box-shadow: var(--grey-color) 0px 10px 10px;
+}

@@ -13,7 +13,7 @@
     {% if page.tags.size >= 1 %}
         <span class="meta-tag" itemprop="keywords">
         {% for tag in page.tags %}
-            <a href="{{ site.base_path }}/Tags/{{ tag }}">#{{ tag | downcase }}</a>{% unless forloop.last %},{% endunless %} 
+            <a href="/Tags/{{ tag }}">#{{ tag | downcase }}</a>{% unless forloop.last %},{% endunless %} 
         {% endfor %}
         </span>
     {% endif %}

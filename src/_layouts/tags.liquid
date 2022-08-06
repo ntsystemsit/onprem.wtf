@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1 class="pagetitle bold-title">All posts with tag #{{ page.title | escape }}</h1>
+
+<aside class="post-list">
+{% for post in site.tags[page.title] %}
+    <div itemscope>
+    <h2 class="post-title" itemprop="headline"><a href="{{ post.relative_url }}">{{ post.data.title }}</a></h2>
+    {%- render "post_meta", page: post, site: site, home: "true" -%}
+    {{ post.summary | strip_html}}
+</div>
+{% endfor %}
+</aside>
+<br>
+{% render "post_footer", page: page %}

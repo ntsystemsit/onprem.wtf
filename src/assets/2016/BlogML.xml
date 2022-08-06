@@ -7451,7 +7451,7 @@ Save-Script -Name Restore-VMPermission -Path &lt;path&gt;&nbsp;&nbsp;</blockquot
 <p>.\Start-LyncBackup.ps1 -PoolFqdn lyncpool01.example.com -Path \\SERVER\Share\CSBackup -Retention 10</p>
 <p>This example exports Lync config and saves it into a subfolder at <a href="file://\\SERVER\Share\CSBackup">\\SERVER\Share\CSBackup</a>. It deletes existing backups in the destination directory if they are older than 10 days.</p>
 <p><strong>Notes</strong></p>
-<p>Author: Thomas Torggler; @torggler<br />Date: 2013-08-17 <br />Version: 1.1 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.1 Added Retention parameter and some error handling. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0: Basics <br />To-do: Support for 2010, Multiple pools, include Lync file store, autodiscovery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>]]></content>
+<p>author: tto; @torggler<br />Date: 2013-08-17 <br />Version: 1.1 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.1 Added Retention parameter and some error handling. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0: Basics <br />To-do: Support for 2010, Multiple pools, include Lync file store, autodiscovery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>]]></content>
       <post-name type="text"><![CDATA[PS: Start-LyncBackup.ps1]]></post-name>
       <authors>
         <author ref="thomas torggler" />
