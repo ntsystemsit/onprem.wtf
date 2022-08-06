@@ -100,7 +100,7 @@ module Jekyll
           # it requires <!-- more --> to be inserted, we'll just do it at the
           # very top.  someone with more time can make it insert after the first
           # paragraph or something.
-          content = "<!-- more -->\r\n" + content + "\r\n{% include imported_disclaimer.html %}\r\n"
+          content = "<!-- more -->\r\n" + content + "\r\n\r\n"
 
           ## This section is used to cleanup any content data.
           #
