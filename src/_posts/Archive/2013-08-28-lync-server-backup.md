@@ -19,7 +19,7 @@ Now that we know what there is to backup, let’s have a look at how. I did poin
 
 I’ve come up with a quick script that invokes the mentioned Export-* cmdlets. The script can be found on my [Github](https://github.com/tomtorggler/PowerShell/blob/master/New-SfBBackup.ps1).
 
-Find more information about the script on the [help page]({{site.baseurl}}/PowerShell/New-SfBBackup/).
+Find more information about the script on the [help page]({{site.base_path}}/PowerShell/New-SfBBackup/).
 
 Tom
 

@@ -68,7 +68,7 @@ Get-CsUser -OU "OU=users,OU=tomt,DC=tomt,DC=local" | .\Invoke-SEFAUtil.ps1 -Serv
 ```
 
 
-The complete online help can be found [here]({{ site.baseurl }}/PowerShell/Invoke-SEFAUtil/)
+The complete online help can be found [here]({{ site.base_path }}/PowerShell/Invoke-SEFAUtil/)
 
 
 What I did in this script, is basically wrap PowerShell around SEFAUtil.exe, I did add some parameter validation, it can only run against Lync users for example. It does write a logfile to the $temp directory and supports PowerShells common parameters like _Verbose_ and _WhatIf_.

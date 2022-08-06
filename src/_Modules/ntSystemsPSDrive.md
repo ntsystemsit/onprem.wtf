@@ -8,7 +8,7 @@ redirect_from: ["/ntsystemspsdrive"]
 
 [![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/ntsystemspsdrive.svg)](https://www.powershellgallery.com/packages/ntsystemspsdrive) <br> ntSystemsPSDrive is a SHiPS provider for [ntSystems.it](https://ntsystem.it/). 
 
-It uses the [SHiPS](https://github.com/PowerShell/SHiPS/) module to create a PSProvider for our blog which exposes our [json-api]({{ "/post/Jekyll-Fun-Consuming-ntsystems-with-PowerShell" | prepend: site.baseurl }}) as PSDrive and enables the following:
+It uses the [SHiPS](https://github.com/PowerShell/SHiPS/) module to create a PSProvider for our blog which exposes our [json-api]({{ "/post/Jekyll-Fun-Consuming-ntsystems-with-PowerShell" | prepend: site.base_path }}) as PSDrive and enables the following:
 
 
 ```powershell
@@ -20,7 +20,7 @@ Get-ChildItem 'ntSystems:\Posts by Category\PowerShell\' | Select-Object -Proper
 Get-Content 'ntSystems:\Posts by Category\ntSystems\Jekyll Fun: Consuming ntSystems with PowerShell' 
 ```
 
-You can read more about it [here]({{ "/post/ntsystemspsdrive-a-ships-drive-for-the-blog" | prepend: site.baseurl }}).
+You can read more about it [here]({{ "/post/ntsystemspsdrive-a-ships-drive-for-the-blog" | prepend: site.base_path }}).
 
 {% render "module_functions", collections: collections, title: page.data.title %}
 
