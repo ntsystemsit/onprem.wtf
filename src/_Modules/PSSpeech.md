@@ -16,4 +16,4 @@ Convert-TextToSpeech -Text "Hi there, how are you doing today?" -Path hithere.mp
 
 {% render "module_functions", collections: collections, title: page.data.title %}
 
-{% render "psgallery", packagename: page.data.title, type: "Module", reponame: page.data.title %}
+{% render "psgallery", data: page.data %}
