@@ -7,7 +7,7 @@ layout: default
 
 **{{ site.metadata.title }}** is the evolution of ntsystems.it. It contains a complete [archive]({% link post.md %}) of the old site as well as new content. 
 
-Just like the old site, this site is **free**. There are no trackers, no ads, no cookies. ~~However, use a service worker to store static files and pages you visited in your browser's cache storage. That makes the site [installable](https://web.dev/discover-installable/), [fast]({% link _posts/2021-01-16-why-is-this-website-fast.md %}), and it will continue to work even if you're offline.~~
+Just like the old site, this site is **free**. There are no trackers, no ads, no cookies. We use a service worker to store pages you visited in your browser's cache storage. That makes the site [installable](https://web.dev/discover-installable/), [fast]({% link _posts/2021-01-16-why-is-this-website-fast.md %}), and it will continue to work even if you're offline.
 
 ## Popular Tags
 {: .bold-title}

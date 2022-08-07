@@ -4,24 +4,15 @@ const CACHE = version + "-onprem-wtf-offline";
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      // non critical
-      cache.addAll([
-          '/assets/js/index.json',
-      ]);
       // critical
       return cache.addAll([
           '/',
           '/index.html',
           '/offline',
-          '/assets/js/theme.js',
-          '/Tags',
+          '/tags',
           '/PowerShell',
           '/post',
-          '/search',
-          '/assets/WOFF2/TTF/SourceSerifPro-Light.ttf.woff2',
-          '/assets/WOFF2/TTF/SourceSans3-Light.ttf.woff2',
-          '/assets/WOFF2/OTF/SourceCodePro-Regular.otf.woff2',
-          '/assets/WOFF2/TTF/SourceSans3-Regular.ttf.woff2'
+          '/search'
         ]);
     }),
   );
