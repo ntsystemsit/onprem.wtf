@@ -301,9 +301,6 @@ blockquote {
     padding-right: 2rem;
     max-width: fit-content;
     background-color: var(--grey-color);
-    &:after {
-        content: ".";
-    }
 }
 
 footer {

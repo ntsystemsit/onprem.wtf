@@ -1,0 +1,23 @@
+---
+# Requires Front Matter
+---
+{"posts":[{% for post in collections.posts.resources %}{
+  "title": {{post.data.title | jsonify}},
+  "url": {{ post.relative_url | jsonify }},
+  "date": {{ post.data.date | date: '%B %-d, %Y' | jsonify }},
+  "category": {{ post.category | jsonify }},
+  "tags": {{ post.tags | jsonify }},
+  "author": {{ post.data.author | jsonify }},
+  "content": {{ post.content | strip_html | strip_newlines | jsonify }}
+}{% unless forloop.last %},{% endunless %}{% endfor %}],
+"docs":[{% for p in site.resources %}{
+  "id": "{{ p.relative_url | slugify }}",
+  "title": {{p.data.title | jsonify}},
+  "author": {{ p.data.author | jsonify }},
+  "tags": {{ p.tags | jsonify }},
+  "content": {{ p.content | strip_html | strip_newlines | jsonify }},
+  "url": {{ p.relative_url | prepend: site.url | jsonify }}
+}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
+
+

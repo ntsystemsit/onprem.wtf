@@ -1,5 +1,5 @@
 ---
-title: "Goodbye Jekyll, hello Bridgetown"
+title: "Goodbye Jekyll, hello Bridgetown!"
 author: tto
 tags: Jekyll
 ---
