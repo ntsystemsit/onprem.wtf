@@ -1,6 +1,7 @@
 ---
-title: "Goodbye Jekyll, welcome Bridgetown"
+title: "Goodbye Jekyll, hello Bridgetown"
 author: tto
+tags: Jekyll
 ---
 
 We have been using Jekyll for our little site since 2016. It was fast, simple, it did it's job nicely. [Bridgetown](https://www.bridgetownrb.com/) does all the same things, and much more. It's Jekyll's modern cousin.
