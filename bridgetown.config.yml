@@ -17,7 +17,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://onprem.wtf" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 template_engine: liquid
@@ -29,7 +29,9 @@ template_engine: liquid
 # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
 # update `publicPath`.
 
-# timezone: America/Los_Angeles
+timezone: Europe/Amsterdam
+lang: en_US
+
 pagination:
   enabled: true
 

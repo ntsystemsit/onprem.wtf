@@ -13,3 +13,10 @@ import "bridgetown-quick-search/dist"
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 
 console.info("onprem.wtf is loaded!")
+
+if ('serviceWorker' in navigator && !(/localhost/.test(window.location.href))) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('{{ site.base_path }}/serviceworker.js')
+        console.log('Servie worker registered.');
+    });
+}
