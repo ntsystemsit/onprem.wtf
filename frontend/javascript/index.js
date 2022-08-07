@@ -16,7 +16,7 @@ console.info("onprem.wtf is loaded!")
 
 if ('serviceWorker' in navigator && !(/localhost/.test(window.location.href))) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('{{ site.base_path }}/serviceworker.js')
+        navigator.serviceWorker.register('/serviceworker.js')
         console.log('Servie worker registered.');
     });
 }
