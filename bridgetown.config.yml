@@ -67,6 +67,6 @@ defaults:
       collection: "posts"
     values:
       layout: "post"
-      permalink: "/post/:title/"
+      permalink: "/post/:slug/"
 
 
