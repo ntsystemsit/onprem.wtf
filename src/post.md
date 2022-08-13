@@ -2,7 +2,7 @@
 title: Archive
 layout: pagewt
 ---
-# Archive
+# Search
 {: .bold-title}
 
 {% render "bridgetown_quick_search/search", placeholder: "Search", input_class: "search-input", snippet_length: 200 %}

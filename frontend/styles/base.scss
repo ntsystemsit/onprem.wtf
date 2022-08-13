@@ -1,24 +1,17 @@
 :root {
-    --global-foreground: #171717;
-    --global-background: #ffffff;
-    --accent-color: #0065b3;
-    --grey-color: #dddddd;
+    --global-foreground: #222831;
+    --global-background: #EEEEEE;
+    --accent-color: #00ADB5;
+    --grey-color: #393E46;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --global-foreground: #e0e0e0;
-        --global-background: #080808;
-        --accent-color: #4db2ff;
-        --grey-color: #444444;
+    :root {
+        --global-foreground: #EEEEEE;
+        --global-background: #222831;
+        --accent-color: #00ADB5;
+        --grey-color: #393E46;
     }
-}
-
-:root[data-theme="dark"] {
-    --global-foreground: #e0e0e0;
-    --global-background: #080808;
-    --accent-color: #4db2ff;
-    --grey-color: #444444;
 }
 
 html {
@@ -40,7 +33,7 @@ body {
     width: 100%;
     max-width: 96%;
     min-height: 100%;
-    border-top: 4px solid var(--grey-color);
+    border-top: 4px solid var(--accent-color);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -67,13 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.75rem;
 }
 h2 {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
 }
 h3 {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
 }
 
 a {
@@ -152,7 +145,8 @@ nav {
         color: var(--global-foreground);
         background-color: var(--global-background);
         &:hover, &.active {
-            background-color: var(--grey-color);
+            background-color: var(--accent-color);
+            color: var(--global-background);
         }
         &:active {
             border-bottom: 1px solid;
@@ -171,7 +165,7 @@ main {
     margin-top: $spacing-unit * 2;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    border-bottom: 4px solid var(--grey-color);
+    border-bottom: 4px solid var(--accent-color);
 }
 
 .post-list {
@@ -202,9 +196,11 @@ main {
 
 .small-caps {
     font-size: $small-font-size;
-    font-variant: small-caps;
-    letter-spacing: 0.1rem;
+    font-family: $code-font;
+    //font-variant: small-caps;
+    //letter-spacing: 0.1rem;
 }
+
 
 .gridcontainer {
     margin-top: $spacing-unit;
@@ -294,13 +290,13 @@ blockquote {
 }
 
 .bold-title {
-    font-size: 1.3rem;
     transform: rotate(-1deg);
     margin-left: -1rem;
     padding-left: 1rem;
     padding-right: 2rem;
     max-width: fit-content;
-    background-color: var(--grey-color);
+    background-color: var(--accent-color);
+    color: var(--global-background);
 }
 
 footer {
@@ -318,8 +314,8 @@ footer {
 
 pre,
 code {
-    font-family: $code-font, monospace;
-    font-weight: 400;
+    font-family: $code-font;
+    //font-weight: 400;
     font-size: $small-font-size;
     border-radius: 3px;
     background-color: #333333;
