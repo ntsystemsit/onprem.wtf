@@ -7,6 +7,7 @@ category: Security
 tags: Azure Cloud Security
 author: tto
 date_modified: false
+redirect_from: ["/post/Send-Check-Point-Logs-to-Azure-Sentinel-beta"]
 ---
 
 Azure Sentinel is Microsoft's new, cloud-native security information and event management (SIEM) tool. In my simplistic point-of-view it is a security-focused, machine-learning-driven add-on for Log Analytics (OMS). Today we will be looking into ingesting Check Point Firewall logs into Log Analytics.   
