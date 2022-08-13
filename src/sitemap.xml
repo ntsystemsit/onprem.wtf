@@ -1,0 +1,17 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.resources %}
+    {% if post.layout != nil %}
+    {% if post.layout != 'feed' %}
+    {% if post.title != 'Find' %}
+    <url>
+        <loc>{{ post.relative_url | remove: 'index.html' | prepend: site.url }}</loc>
+        <lastmod>{{ post.date | site.time | date: "%F" }}</lastmod>
+    </url>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</urlset>

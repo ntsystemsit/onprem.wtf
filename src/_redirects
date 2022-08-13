@@ -1,10 +1,16 @@
+/ntsystemspsdrive /powershell/ntsystemspsdrive 301
 /psspeech /powershell/psspeech 301
 /tak /powershell/tak 301
 /post/Deploying-Labs-using-Azure-Resource-Manager /post/deploying-labs-using-azure-resource-manager 301
 /post/deploying-labs-using-azure-resource-manager /post/deploying-labs-using-azure-resource-manager 301
 /post/Azure-File-Services /post/migrating-blogengine-to-github-pages-2 301
 /post/azure-file-services /post/migrating-blogengine-to-github-pages-2 301
+/post/AAD-Connect-Failed-to-load-configuration-information /post/aad-connect-failed-to-load-configuration-information 301
+/post/Skype-for-Business-Hybrid-Observations /post/skype-for-business-hybrid-observations 301
 /bot /post/azure-functions-building-a-telegram-bot-with-powershell-1 301
+/post/Azure-Functions-Building-a-Telegram-Bot-with-PowerShell-1 /post/azure-functions-building-a-telegram-bot-with-powershell-2 301
+/post/Powershell-Script-to-enable-specific-Office-365-Service /post/powershell-script-to-enable-specific-office-365-service 301
+/post/Create-a-SAS-token-for-AzCopy /post/create-a-sas-token-for-azcopy 301
 /post/Send-Check-Point-Logs-to-Azure-Sentinel-beta /post/send-check-point-logs-to-azure-sentinel-beta 301
 /post/Drucken-mit-Internet-Explorer-8-nicht-mehr-moglich /post/drucken-mit-internet-explorer-8-nicht-mehr-moglich 301
 /post/drucken-mit-internet-explorer-8-nicht-mehr-moglich /post/drucken-mit-internet-explorer-8-nicht-mehr-moglich 301

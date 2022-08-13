@@ -7,6 +7,7 @@ category: DevOps
 tags: PowerShell Cloud Azure
 author: tto
 date_modified: false
+redirect_from: ["/post/Create-a-SAS-token-for-AzCopy"]
 ---
 
 I've spent way too much time trying to figure this out, so here goes a quick note that hopefully saves someone a minute.
