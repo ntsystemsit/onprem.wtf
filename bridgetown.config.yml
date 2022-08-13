@@ -38,14 +38,15 @@ pagination:
 collections:
   Scripts:
     output: true
-    permalink: "/PowerShell/:title/"
+    permalink: "/powershell/:slug/"
   Modules:
     output: true
-    permalink: "/PowerShell/:title/"
+    permalink: "/powershell/:slug/"
   OnlineHelp:
     output: true
-    permalink: "/PowerShell/:title/"
+    permalink: "/powershell/:slug/"
   tags:
+    permalink: "/tags/:slug/"
     output: true
 
 
