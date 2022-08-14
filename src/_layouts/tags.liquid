@@ -8,7 +8,7 @@ layout: default
     <div class="post-list borderl">
     <h2 class="post-title" itemprop="headline"><a href="{{ post.relative_url }}">{{ post.data.title }}</a></h2>
     {%- render "post_meta", page: post, site: site, home: "true" -%}
-    {{ post.summary | strip_html}}
+    {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.summary }}{% endif %}
 </div>
 {% endfor %}
 </aside>

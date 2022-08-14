@@ -9,6 +9,11 @@
         <time datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" | downcase }}</time>
     </span>
     {% endif %}
+    {% if page.date_modified %}
+    <span class="meta-tag">
+        updated <time datetime="{{ page.date_modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.date_modified | date: "%-d %b %Y" | downcase}}</time>
+    </span>
+    {% endif %}
     {% if home != "true" %}
     {% if page.tags.size >= 1 %}
         <span class="meta-tag" itemprop="keywords">
@@ -16,11 +21,6 @@
             <a href="/tags/{{ tag | downcase }}">#{{ tag | downcase }}</a>{% unless forloop.last %},{% endunless %} 
         {% endfor %}
         </span>
-    {% endif %}
-    {% if page.date_modified %}
-    <span class="meta-tag post-updated">
-        updated <time datetime="{{ page.date_modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.date_modified | date: "%-d %b %Y" | downcase}}</time>
-    </span>
     {% endif %}
     {% if page.author %}
     <span class="meta-tag">

@@ -7,11 +7,10 @@ category: Cloud
 tags: Office365 Hybrid Exchange
 author: tto
 date_modified: 2018-09-20
+excerpt: Observations and useful snippets about Exchange in hybrid environments.
 ---
 
 Like I did [here]({{ site.url }}/post/Skype-for-Business-Hybrid-Observations) with Skype for Business, I'm collecting some observations and useful snippets about Exchange in hybrid environments.
-
-<!-- more -->
 
 ## Completing individual migration users
 
