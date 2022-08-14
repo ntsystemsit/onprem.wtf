@@ -1,22 +1,24 @@
 :root {
-    --global-foreground: #222831;
-    --global-background: #EEEEEE;
-    --accent-color: #00ADB5;
-    --grey-color: #393E46;
+    --global-color: #3D3C42;
+    --global-background: #FEFBF6;
+    --accent-color: #0074D9;
+    --white-color: #FEFBF6;
+    --grey-color: #2b2b2b;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --global-foreground: #EEEEEE;
-        --global-background: #222831;
-        --accent-color: #00ADB5;
-        --grey-color: #393E46;
+        --global-color: #f8f8f2;
+        --global-background: #111111;
+        --accent-color: #1efba9;
+        --white-color: #f8f8f2;
+        --grey-color: #2b2b2b;
     }
 }
 
 html {
     background-color: var(--global-background);
-    color: var(--global-foreground);
+    color: var(--global-color);
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font;
     -webkit-font-smoothing: subpixel-antialiased;
     -webkit-text-size-adjust: 100%;
@@ -101,7 +103,7 @@ ul li {
 }
 
 [aria-pressed="false"] {
-    fill: var(--global-foreground);
+    fill: var(--global-color);
 }
 [aria-pressed="true"] {
     fill: var(--accent-color);
@@ -112,7 +114,7 @@ ul li {
 
 button {
     all: initial;
-    fill: var(--global-foreground);
+    fill: var(--global-color);
     cursor: pointer;
 }
 
@@ -142,7 +144,7 @@ nav {
         padding: 0.3rem 5px;
         display: block;
         float: left;
-        color: var(--global-foreground);
+        color: var(--global-color);
         background-color: var(--global-background);
         &:hover, &.active {
             background-color: var(--accent-color);
@@ -173,12 +175,12 @@ main {
         margin-bottom: calc($spacing-unit / 3);
     }
     h2 a {
-        color: var(--global-foreground);
+        color: var(--global-color);
         background-color: var(--global-background);
         font-family: $title-font;   
         &:hover {
             color: var(--global-background);
-            background-color: var(--global-foreground);
+            background-color: var(--accent-color);
         } 
     }
 }
@@ -216,6 +218,16 @@ main {
     }
 }
 
+.postscontainer {
+    margin-top: $spacing-unit;
+    margin-bottom: calc($spacing-unit / 2);
+    @include display-grid;
+    
+    h1, h2 {
+        margin-top: initial;
+    }
+}
+
 .tagscontainer {
     margin-top: $spacing-unit;
     margin-bottom: calc($spacing-unit / 2);
@@ -225,7 +237,7 @@ main {
     row-gap: 0.5rem;
     a {
         text-decoration: none;
-        color: var(--global-foreground);
+        color: var(--global-color);
     }
     li {
         border-bottom: 1px solid var(--accent-color);
@@ -261,7 +273,7 @@ main {
     font-weight: $base-font-weight;
     font-size: 1.2rem;
     background-color: var(--global-background);
-    color: var(--global-foreground);
+    color: var(--global-color);
     border: 1px solid var(--accent-color);
     border-radius: 3px;
     padding: .3rem;
@@ -273,8 +285,8 @@ main {
 }
 
 blockquote {
+    border: 1px solid var(--accent-color);
     border-radius: 3px;
-    background: var(--grey-color);
     padding: .3rem .5rem;
     p {
         margin-bottom: initial;
@@ -301,8 +313,8 @@ blockquote {
 
 footer {
     a.float-left, a.float-right {
-        background-color: var(--grey-color);
-        color: var(--global-foreground);
+        background-color: var(--accent-color);
+        color: var(--global-background);
     }
     a.float-left {
         padding: 0 1rem 0 2rem;
@@ -318,8 +330,8 @@ code {
     //font-weight: 400;
     font-size: $small-font-size;
     border-radius: 3px;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: var(--grey-color);
+    color: var(--white-color);
 }
 
 code {
@@ -382,11 +394,11 @@ pre {
 bridgetown-search-results {
   --link-color: var(--accent-color);
   --divider-color: var(--accent-color);
-  --text-color: var(--global-foreground);
+  --text-color: var(--global-color);
   max-width: 740px;
 }
 
 bridgetown-search-results::part(inner) {
     background-color: var(--global-background);
-    box-shadow: var(--grey-color) 0px 10px 10px;
+    box-shadow: var(--accent-color) 0px 10px 10px;
 }

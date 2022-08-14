@@ -34,14 +34,13 @@ Since 2009 we have written {{ collections.posts.resources.size }} posts. You can
 ## Recent Posts
 {: .bold-title}
 
-<aside class="post-list">
-{% for post in collections.posts.resources limit:3 %}
-<div itemscope>
-    <h2 class="post-title" itemprop="headline"><a href="{{ post.relative_url }}">{{ post.data.title }}</a></h2>
-    {%- render "post_meta", page: post, site: site, home: "true" -%}
-    {{ post.summary | strip_html}}
-</div>
-{% endfor %}
+<aside class="postscontainer">
+    {% for post in collections.posts.resources limit:3 %}
+    <div class="post-list borderl">
+        <h2 class="post-title"><a href="{{ post.relative_url }}">{{ post.data.title }}</a></h2>
+        {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.summary }}{% endif %}
+    </div>
+    {%- endfor -%}
 </aside>
 
 ## Archive
