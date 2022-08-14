@@ -10,7 +10,7 @@ self.addEventListener('install', function (event) {
           '/index.html',
           '/offline',
           '/tags',
-          '/PowerShell',
+          '/powershell',
           '/post',
           '/search'
         ]);
