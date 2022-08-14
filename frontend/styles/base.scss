@@ -8,10 +8,10 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --global-color: #f8f8f2;
+        --global-color: #CCCCCC;
         --global-background: #111111;
-        --accent-color: #1efba9;
-        --white-color: #f8f8f2;
+        --accent-color: #FFDC00; // #BCFD4C;
+        --white-color: #CCCCCC;
         --grey-color: #2b2b2b;
     }
 }
@@ -150,9 +150,6 @@ nav {
             background-color: var(--accent-color);
             color: var(--global-background);
         }
-        &:active {
-            border-bottom: 1px solid;
-        }
     }
 }
 
@@ -168,6 +165,12 @@ main {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     border-bottom: 4px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--global-background);
+    a {
+        color: var(--global-background);
+        font-weight: bold;
+    }
 }
 
 .post-list {
@@ -309,6 +312,7 @@ blockquote {
     max-width: fit-content;
     background-color: var(--accent-color);
     color: var(--global-background);
+    font-weight: bolder;
 }
 
 footer {
