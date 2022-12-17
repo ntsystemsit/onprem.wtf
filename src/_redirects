@@ -676,4 +676,5 @@
 /PowerShell/update-filewritetime/ /powershell/update-filewritetime 301
 /.well-known/webfinger?resource=acct:tto@onprem.wtf https://masto.ai/.well-known/webfinger?resource=acct:tto@masto.ai 301
 /.well-known/webfinger?resource=acct:tom@onprem.wtf https://masto.ai/.well-known/webfinger?resource=acct:tto@masto.ai 301
-/.well-known/host-meta* https://masto.ai/.well-known/host-meta:splat 301
+/.well-known/host-meta* https://masto.ai/.well-known/host-meta 301
+/.well-known/nodeinfo* https://masto.ai/.well-known/nodeinfo 301
