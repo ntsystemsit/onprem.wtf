@@ -1,7 +1,8 @@
 {
     "tto":{
         "name": "Tom Torggler",
-        "twitter": "torggler"
+        "twitter": "torggler",
+        "mastodon": "tto@masto.ai"
     },
     "dni":{
         "name": "Daniel Nitz",
