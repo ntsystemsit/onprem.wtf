@@ -674,4 +674,5 @@
 /PowerShell/TAK/Update-FileWriteTime/ /powershell/update-filewritetime 301
 /PowerShell/TAK/update-filewritetime/ /powershell/update-filewritetime 301
 /PowerShell/update-filewritetime/ /powershell/update-filewritetime 301
-/.well-known/webfinger* https://masto.ai/.well-known/webfinger:splat 301
+/.well-known/webfinger?resource=acct:tto@onprem.wtf https://masto.ai/.well-known/webfinger?resource=acct:tto@masto.ai 301
+/.well-known/webfinger?resource=acct:tom@onprem.wtf https://masto.ai/.well-known/webfinger?resource=acct:tto@masto.ai 301
