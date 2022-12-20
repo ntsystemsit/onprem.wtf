@@ -25,6 +25,8 @@ template_engine: liquid
 timezone: Europe/Amsterdam
 lang: en_US
 
+include: [ "/.well-known" ]
+
 pagination:
   enabled: true
 
