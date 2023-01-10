@@ -1,0 +1,17 @@
+---
+permalink: .well-known/lnurlp/tto
+---
+{
+    "status":"OK",
+    "tag":"payRequest",
+    "commentAllowed":255,
+    "callback":"https://getalby.com/lnurlp/tomt/callback",
+    "metadata":"[[\"text/identifier\", \"tomt@getalby.com\"], [\"text/plain\", \"Sats for tomt\"]]",
+    "minSendable":100,
+    "maxSendable":1000000000,
+    "payerData":
+    {
+        "name":{"mandatory":false},
+        "email":{"mandatory":false}
+    }
+}
