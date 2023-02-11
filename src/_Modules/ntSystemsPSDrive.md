@@ -6,7 +6,7 @@ type: Module
 redirect_from: ["/ntsystemspsdrive"]
 ---
 
-[![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/ntsystemspsdrive.svg)](https://www.powershellgallery.com/packages/ntsystemspsdrive) <br> ntSystemsPSDrive is a SHiPS provider for [ntSystems.it](https://ntsystem.it/). 
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/ntsystemspsdrive.svg)](https://www.powershellgallery.com/packages/ntsystemspsdrive) <br> ntSystemsPSDrive is a SHiPS provider for [ntSystems.it](https://ntsystems.it/). 
 
 It uses the [SHiPS](https://github.com/PowerShell/SHiPS/) module to create a PSProvider for our blog which exposes our [json-api]({{ "/post/Jekyll-Fun-Consuming-ntsystems-with-PowerShell" | prepend: site.base_path }}) as PSDrive and enables the following:
 

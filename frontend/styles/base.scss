@@ -9,8 +9,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --global-color: #CCCCCC;
-        --global-background: #111111;
-        --accent-color: #FFDC00; // #BCFD4C;
+        --global-background: #1e1e1e;
+        --accent-color: #BCFD4C; // #FFDC00; 
         --white-color: #CCCCCC;
         --grey-color: #2b2b2b;
     }
@@ -26,6 +26,7 @@ html {
        -moz-font-feature-settings: "kern" 1;
          -o-font-feature-settings: "kern" 1;
             font-feature-settings: "kern" 1;
+    text-rendering: optimizeLegibility;
     font-kerning: normal;
     min-height: 100vh;
 }
@@ -325,7 +326,6 @@ footer {
 pre,
 code {
     font-family: $code-font;
-    //font-weight: 400;
     font-size: $small-font-size;
     border-radius: 3px;
     background-color: var(--grey-color);
@@ -358,7 +358,7 @@ pre {
 
 @media screen and (min-width: 768px) {
     html {
-        font-size: 21px;
+        font-size: 19px;
     }
     body {
         max-width: 664px;
@@ -373,7 +373,7 @@ pre {
 
 @media screen and (min-width: 992px) {
     html {
-        font-size: 23px;
+        font-size: 21px;
     }
     body {
         max-width: 740px;
