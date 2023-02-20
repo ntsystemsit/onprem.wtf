@@ -2,16 +2,24 @@
 permalink: .well-known/lnurlp/tto
 ---
 {
-    "status":"OK",
-    "tag":"payRequest",
-    "commentAllowed":255,
-    "callback":"https://getalby.com/lnurlp/tomt/callback",
-    "metadata":"[[\"text/identifier\", \"tomt@getalby.com\"], [\"text/plain\", \"Sats for tomt\"]]",
-    "minSendable":100,
-    "maxSendable":1000000000,
-    "payerData":
-    {
-        "name":{"mandatory":false},
-        "email":{"mandatory":false}
-    }
+  "status": "OK",
+  "callback": "https://ln.tips/.well-known/lnurlp/tomt_it",
+  "tag": "payRequest",
+  "maxSendable": 1000000000,
+  "minSendable": 1000,
+  "metadata": "[[\"text/plain\",\"Pay to tto@onprem.wtf\"],[\"text/identifier\",\"tomt_it@ln.tips\"]]",
+  "commentAllowed": 500,
+  "payerData": {
+    "name": {
+      "mandatory": false
+    },
+    "pubkey": null,
+    "identifier": {
+      "mandatory": false
+    },
+    "email": {
+      "mandatory": false
+    },
+    "auth": null
+  }
 }
