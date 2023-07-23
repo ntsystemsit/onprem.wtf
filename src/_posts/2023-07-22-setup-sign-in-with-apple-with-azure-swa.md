@@ -2,7 +2,7 @@
 title: "Configure Sign in with Apple for Azure Static Web App"
 author: tto
 tags: Azure
-excerpt: "Configure a"
+excerpt: "How to configure Sign in with Apple for Azure Static Web App."
 ---
 
 I'm working on a side project and decided to use [Sign in with Apple](https://developer.apple.com/documentation/sign_in_with_apple) as an additional authentication provider, next to AAD that I would normally use.
