@@ -47,7 +47,7 @@ v=spf include:spf.protection.outlook.com -all
 > If you are not using a domain for outbound email, please publish the following SPF record to make it harder for criminals to abuse your domain:
 > 
 > TXT: `v=spf -all`
-{:title="Note"}
+{:.note}
 
 This is how far the wizard goes but we should really always configure the following records as well.
 
@@ -106,7 +106,7 @@ Value: v=DMARC1; p=none; pct=100;
 ```
 
 > While the SPF record must be published at the root of your domain, the DMARC record must be at _dmarc.
-{:title="Note"}
+{:.note}
 
 With DMARC it is recommended to implement monitoring, so we will have to look at an additional tool. I have found the [DMARC Monitor](https://go.valimail.com/microsoft.html) from ValiMail is a good option to get started, it is also free for Microsoft 365 customers. There are many alternatives, please check with your security team if you already have a tool. Whichever tool you end up using, it will ask you to update your DMARC record to include an URI of a mailbox to send reports to. The `rua` and `ruf` tags in the TXT record are used for that, in the case of ValiMail the complete record looks like this: 
 
@@ -137,7 +137,7 @@ v=DMARC1; p=reject; pct=100; rua=mailto:dmarc_agg@vali.email;
 > If you are not using a domain for outbound email, please publish the following DMARC record to make it harder for criminals to abuse your domain:
 > 
 > TXT: v=DMARC1; p=reject; pct=100;
-{:title="Note"}
+{:.note}
 
 In the next post we will have a look at preset security policies in Exchange Online Protection.
 

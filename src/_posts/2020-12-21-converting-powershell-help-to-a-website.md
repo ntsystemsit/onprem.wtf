@@ -40,7 +40,7 @@ foreach ($cmdlet in (Get-Command -Module PSSpeech)) {
 The above example creates a `.md` help file for every function in the `TAK` module. The files are almost ready to be used by our Jekyll-powered blog, I'm using the `-Metadata` parameter to add some additional information to the 'front matter' of each file.
 
 > I could be using `New-MarkdownHelp -Module TAK` but that way, I was not able to include the metadata automatically.
-{:title="Note"}
+{:.note}
 
 ## Rename files for Jekyll
 

@@ -22,7 +22,7 @@ You can find a link to the CSP reference below.
 Now it turns out there is a CSP for policy-based QoS but it just applies to Surface Hub devices. If you're lucky enough to configure QoS on such a device, here is a screenshot of the settings you will most likely use. 
 
 > The port numbers may be different in your environment.
-{:title="Warning"}
+{:.warning}
 
 {% render "img", img:"/assets/2019/11-29-01.png" %}
 
