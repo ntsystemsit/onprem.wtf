@@ -21,9 +21,11 @@ That's what the customer wanted to see and why I got do a demo on Azure in the f
 
 So as mentioned above, i wanted to demo the setup of a quick lab along with the CSR, having only the router and no endpoints to connect to, doesn't make to much sense. I used the Azure Resource Manager to create a new resource group and a new virtual network with two subnets. One of which would be CSR's "public" facing subnet (with a Public IP associated) the other one was my "backend" network for cloud workloads (without Public IPs). A Nano Server was quick to deploy and provided the "backend" for my lab. 
 
-<a href="/assets/archive/image_743.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/archive/image_thumb_741.png" width="228" height="244"></a> <h1>The template</h1> 
+<a href="/assets/archive/image_743.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/archive/image_thumb_741.png" width="228" height="244"></a> 
 
-I did use Visual Studio to modify and adapt the ARM template to my needs, but really any "json"-capable text editor/ISE can be used.  
+## The template
+
+I did use Visual Studio to modify and adapt the ARM template to my needs, but really any text editor/ISE can be used.  
 
 The template consists of two files, the template itself and a file for parameters. In my case, I did use the parameter file just for the passwords of the CSR and the Nano Server, the other parameters are assigned directly in the template file. There is room for improvement in this case, as the template would be more flexible if it had less "hardcoded" information.  
 
@@ -81,7 +83,7 @@ Deploy the template
 azure group deployment create -f azure_arm_csr_nano_template.json -e azure_arm_csr_nano_parameters.json -g rg-csr-lab -n CSR01
 ```
 
-Find the template, parameters file and more detailed information for deployment at my GitHub: <a href="https://github.com/tomtorggler/Azure">https://github.com/tomtorggler/Azure</a> 
+Find the template, parameters file and more detailed information for deployment at my GitHub: <a href="https://github.com/tomtorggler/">https://github.com/tomtorggler</a> 
 
 So, once the template is prepared, deployment is just a piece of cake! That’s how deploying labs just got a lot quicker, don’t you think? 
 

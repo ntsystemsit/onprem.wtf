@@ -12,7 +12,7 @@
         --global-color: #CCCCCC;
         --global-background: #1e1e1e;
         --accent-color: #FFD93D;
-        --accent-color-2: #4CD9D9;
+        --accent-color-2: #4CD9D9; 
         --white-color: #CCCCCC;
         --grey-color: #2b2b2b;
     }
@@ -139,9 +139,6 @@ nav {
     top: 0;
     margin-left: -1rem;
     background-color: var(--global-background);
-    position: sticky;
-    overflow: hidden;
-    z-index: 1;
     a {
         text-decoration: none;
         padding: 0.3rem 5px;
