@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Cert Tool",
+        "description": "Public and private key operations",
+        "url": "https://cert.onprem.wtf",
+        "repo": "https://github.com/tomtorggler/onprem-wtf-osw"
+    },
+    {
+        "name": "DKIM Validator",
+        "description": "Validate DKIM signatures",
+        "url": "https://dkim.onprem.wtf",
+        "repo": "https://github.com/tomtorggler/onprem-wtf-dkim"
+    },
+    {
+        "name": "Secure Clip",
+        "description": "End to end encrypted web clipboard and file sharing",
+        "url": "https://clip.onprem.wtf",
+        "repo": "https://github.com/tomtorggler/onprem-wtf-clip"
+    }
+]

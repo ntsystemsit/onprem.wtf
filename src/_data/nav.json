@@ -9,6 +9,9 @@
         "title": "PowerShell",
         "url": "/powershell"
     },{
+        "title": "Tools",
+        "url": "/tools"
+    },{
         "title": "Archive",
         "url": "/post"
     }
