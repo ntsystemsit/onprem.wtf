@@ -212,6 +212,8 @@ main {
     margin-top: calc($spacing-unit * 1.5);
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+    // Ensure content is always visible (Turbo transition fallback)
+    visibility: visible !important;
 }
 
 // Footer
