@@ -24,9 +24,18 @@ document.addEventListener("turbo:visit", () => {
   })
 });
 
-document.addEventListener("turbo:load", () => {
+// Reset visibility before new content renders (more reliable than turbo:load)
+document.addEventListener("turbo:before-render", (event) => {
+  let newMain = event.detail.newBody.querySelector("main");
+  if (newMain) {
+    newMain.style.visibility = "visible";
+    newMain.style.opacity = "0";
+  }
+});
+
+document.addEventListener("turbo:render", () => {
   let main = document.querySelector("main");
-  if (main.dataset.turboTransition == "false") return;
+  if (!main || main.dataset.turboTransition == "false") return;
 
   let [movement, scale] = ["-10px", "0.99"];
 
