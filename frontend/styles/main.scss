@@ -1,18 +1,17 @@
 @charset "utf-8";
 
-$spacing-unit: 2.4rem;
-$body-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-$title-font: $body-font;
-$code-font: Menlo, "SF Mono", "Andale Mono", Roboto Mono, Monaco, monospace;
-/*
-$body-font: 'Source Sans 3', sans-serif;
-$title-font: 'Source Serif Pro', 'serif';
-$code-font: 'SourceCodePro', 'monospace';
-*/
+// Typography
+$body-font: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+$title-font: 'Source Serif Pro', Georgia, serif;
+$code-font: 'Source Code Pro', Menlo, Monaco, monospace;
+
 $base-font-size: 16px;
-$base-font-weight: 300;
+$base-font-weight: 400;
 $small-font-size: $base-font-size * 0.85;
-$base-line-height: 1.8;
+$base-line-height: 1.75;
+
+// Spacing
+$spacing-unit: 2rem;
 
 /*
 @mixin relative-font-size($ratio) {
