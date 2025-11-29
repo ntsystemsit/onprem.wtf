@@ -365,6 +365,7 @@ main {
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
     width: 100%;
+    margin-bottom: $spacing-unit;
     transition: border-color 0.15s ease, box-shadow 0.15s ease;
 
     &:focus {
