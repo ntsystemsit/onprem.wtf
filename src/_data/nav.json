@@ -1,18 +1,18 @@
 [
     {
-        "title": "Home",
+        "title": "home",
         "url": "/"
     },{
-        "title": "Tags",
+        "title": "tags",
         "url": "/tags"
     },{
-        "title": "PowerShell",
+        "title": "pwsh",
         "url": "/powershell"
     },{
-        "title": "Tools",
+        "title": "tools",
         "url": "/tools"
     },{
-        "title": "Archive",
+        "title": "archive",
         "url": "/post"
     }
 ]

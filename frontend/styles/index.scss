@@ -1,2 +1,2 @@
-// Import partials for critical css content
-@import "main","base","syntax";
+// Import partials - fonts first, then variables, then styles
+@import "fonts", "main", "base", "syntax";
