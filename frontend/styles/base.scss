@@ -571,3 +571,170 @@ bridgetown-search-results::part(inner) {
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+// Focused search overlay experience
+.search-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 25, 24, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+    pointer-events: none;
+
+    @media (prefers-color-scheme: light) {
+        background: rgba(250, 248, 245, 0.7);
+    }
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.search-focus-container {
+    position: relative;
+    z-index: 101;
+    margin-bottom: $spacing-unit;
+}
+
+.search-focus-inner {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-focus-container.active .search-focus-inner {
+    border-color: var(--color-accent-secondary);
+    box-shadow: 
+        0 0 0 4px rgba(13, 115, 119, 0.15),
+        0 20px 60px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.search-focus-title {
+    font-family: $title-font;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+    transition: color 0.2s ease;
+}
+
+.search-focus-container.active .search-focus-title {
+    color: var(--color-accent-secondary);
+}
+
+.search-focus-hint {
+    font-size: $small-font-size;
+    color: var(--color-text-muted);
+    margin: 0 0 1rem 0;
+}
+
+.search-focus-input {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0;
+    border: 2px solid var(--color-border);
+    transition: all 0.2s ease;
+
+    &:focus {
+        border-color: var(--color-accent-secondary);
+        box-shadow: 0 0 0 4px rgba(13, 115, 119, 0.1);
+    }
+}
+
+.search-focus-container.active .search-focus-input {
+    border-color: var(--color-accent-secondary);
+}
+
+// Search results styling - only visible when search is active
+.search-focus-container bridgetown-search-results {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.search-focus-container.active bridgetown-search-results {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-focus-container bridgetown-search-results::part(inner) {
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent-secondary);
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+// Standalone search page (full-height centered)
+.search-focus-standalone {
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+
+.search-focus-standalone .search-focus-inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-focus-standalone.active {
+    align-items: flex-start;
+    padding-top: 5vh;
+}
+
+// Page content blurs when search is active
+.page-content {
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.page-content.blurred {
+    filter: blur(4px);
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+// Close hint
+.search-close-hint {
+    text-align: center;
+    font-size: $small-font-size;
+    color: var(--color-text-muted);
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.search-focus-container.active .search-close-hint {
+    opacity: 1;
+}
+
+// Keyboard shortcut badge
+kbd {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    font-family: $code-font;
+    font-size: 0.75rem;
+    background: var(--color-code-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    box-shadow: 0 1px 0 var(--color-border);
+}

@@ -8,6 +8,7 @@ import * as Turbo from "@hotwired/turbo"
 //
 import "./turbo_transitions.js"
 import "bridgetown-quick-search/dist"
+import "./search_focus.js"
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
