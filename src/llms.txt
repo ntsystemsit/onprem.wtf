@@ -1,0 +1,40 @@
+# onprem.wtf
+
+> A technical blog by Tom Torggler and Daniel Nitz focused on PowerShell, Azure, Microsoft infrastructure, and IT administration. The site is an evolution of ntsystems.it, containing a complete archive since 2009 plus new content. No trackers, no ads, no cookies.
+
+The site contains over 300 blog posts covering topics like PowerShell scripting, Azure cloud services, Exchange Online, Teams, Skype for Business, Hyper-V, Windows Server administration, networking, and security. It also hosts documentation for several PowerShell modules and standalone scripts.
+
+Key topics covered:
+- PowerShell modules and scripts with full online help documentation
+- Azure services (ARM templates, Functions, Cognitive Services, Sentinel)
+- Microsoft 365 and Exchange Online administration
+- Unified Communications (Teams, Skype for Business, Lync)
+- Windows Server administration and Hyper-V
+- Network tools and security testing
+- Email authentication (SPF, DKIM, DMARC)
+
+## Documentation
+
+- [PowerShell Modules and Scripts](https://onprem.wtf/powershell/): Index of PowerShell modules (TAK, PSSpeech, ntSystemsPSDrive) and standalone scripts with full cmdlet documentation
+- [TAK Module](https://onprem.wtf/powershell/tak/): PowerShell module containing a variety of tools including for DNS-based email authentication testing (SPF, DKIM, DMARC, MX records)
+- [PSSpeech Module](https://onprem.wtf/powershell/psspeech/): PowerShell module for Azure Cognitive Services text-to-speech conversion
+- [ntSystemsPSDrive Module](https://onprem.wtf/powershell/ntsystemspsdrive/): A ship's drive for browsing the blog content via PowerShell
+
+## Blog
+
+- [All Posts Archive](https://onprem.wtf/post/): Complete archive of all blog posts since 2009
+- [All Tags](https://onprem.wtf/tags/): Browse content by topic including PowerShell, Azure, Exchange, Teams, Security, and more
+- [RSS Feed](https://onprem.wtf/feed.xml): Atom feed for following new posts
+
+## Tools
+
+- [Tools Overview](https://onprem.wtf/tools/index.html.md): All web tools in markdown format
+- [Cert Tool](https://cert.onprem.wtf): Web-based public and private key operations
+- [DKIM Validator](https://dkim.onprem.wtf): Validate DKIM signatures online
+- [Secure Clip](https://clip.onprem.wtf): End-to-end encrypted web clipboard and file sharing
+
+## Optional
+
+- [Search](https://onprem.wtf/search/): Full-text search across all site content
+- [GitHub Repository](https://github.com/ntsystemsit/onprem.wtf): Source code for this website
+

@@ -2,7 +2,7 @@
 title: "lost & found: AI highlights of the week"
 date: 2025-12-05
 author: tto
-tags: ai
+tags: AI
 excerpt: ""
 ---
 
