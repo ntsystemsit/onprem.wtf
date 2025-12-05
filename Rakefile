@@ -9,7 +9,7 @@ task default: :deploy
 # Standard set of tasks, which you can customize if you wish:
 #
 desc "Build the Bridgetown site for deployment"
-task :deploy => [:clean, "frontend:build"] do
+task :deploy => [:generate_tags, :clean, "frontend:build"] do
   Bridgetown::Commands::Build.start
 end
 
@@ -39,8 +39,5 @@ end
 
 desc "Generate missing tag files"
 task :generate_tags do
-  Bridgetown::Commands::Apply.start
+  sh "bin/bridgetown apply"
 end
-
-desc "Deploy with tag generation"
-task :deploy_with_tags => [:generate_tags, :deploy]
