@@ -37,13 +37,10 @@ namespace :frontend do
   end
 end
 
-#
-# Add your own Rake tasks here! You can use `environment` as a prerequisite
-# in order to write automations or other commands requiring a loaded site.
-#
-# task :my_task => :environment do
-#   puts site.root_dir
-#   automation do
-#     say_status :rake, "I'm a Rake tast =) #{site.config.url}"
-#   end
-# end
+desc "Generate missing tag files"
+task :generate_tags do
+  Bridgetown::Commands::Apply.start
+end
+
+desc "Deploy with tag generation"
+task :deploy_with_tags => [:generate_tags, :deploy]
