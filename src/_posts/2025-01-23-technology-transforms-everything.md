@@ -1,5 +1,5 @@
 ---
-title: "The Ecological Nature of Technological Change: An IT Pro's Perspective"
+title: "The Ecological Nature of Technological Change"
 date: 2025-01-23
 author: tto
 tags: technology
@@ -43,3 +43,5 @@ As with any ecological change, the outcomes will depend not just on the technolo
 but on how we choose to integrate it into our (professional) lives.
 
 &mdash; Tom
+
+_This post was generated from a conversation I had with Claude._
