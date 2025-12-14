@@ -19,3 +19,7 @@ Microsoft just launched [VibeVoice-Realtime](https://huggingface.co/microsoft/Vi
 [llms.txt](https://llmstxt.org/) as a way to provide LLM-friendly content has been around for a little while.
 
 Microsoft proposes [NLweb](https://github.com/nlweb-ai/NLWeb) as a proof-of-concept for conversational interfaces and a semantic layer for the web.
+
+## planetary defense
+
+[hera.space](https://hera.space/) is on a mission to study asteroid deflection. the website is also a super-cool multi-modal AI showcase.
